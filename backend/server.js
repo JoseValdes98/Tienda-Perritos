@@ -72,7 +72,7 @@ app.post("/api/productos", async (req, res) => {
   const { nombre, descripcion, precio, stock } = req.body;
 
   if (!nombre || precio == null || stock == null) {
-    return res.status(400).json({ message: "Nombre, precio y stock son obligatorios." });
+    return res.status(400).json({ message: "Nombre, precios y stocks son obligatorios." });
   }
 
   try {
